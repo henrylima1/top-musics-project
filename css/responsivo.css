@@ -1,6 +1,17 @@
 @media (max-width: 400px) {
-    main {
+    body {
+        background: none;
+        background-color: rgba(0, 0, 0, 0.87);
         width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        width: 95vw;
         font-size: 10px;
+        height: 400px;
+    }
+    ol li {
+        margin-left: -38px;
     }
 }
