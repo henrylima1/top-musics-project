@@ -9,7 +9,10 @@
 body {
     font-family: "Outfit", sans-serif;
     color: white;
-    background: url("https://images.alphacoders.com/121/1219489.jpg");
+    background: url("https://c.wallhere.com/photos/5e/72/Sousou_No_Frieren_Frieren-2291200.jpg!d");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
@@ -41,7 +44,11 @@ main ol li a {
 }
 
 main ol li a:hover {
-    color: #f5d5f0;
+    color: #3da8f0;
+}
+
+main ol li:hover{
+    color: #3da8f0;
 }
 
 main img {
