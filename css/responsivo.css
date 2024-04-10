@@ -1,9 +1,9 @@
 @media (max-width: 400px) {
     body {
-        background: none;
+        background-position: center center;
         background-color: rgba(0, 0, 0, 0.87);
         width: 100vw;
-        height: 100vh;
+        height: 400px;
     }
 
     main {
@@ -11,7 +11,7 @@
         font-size: 10px;
         height: 400px;
     }
-    ol li {
-        margin-left: -38px;
+    ul li {
+        margin-left: -55px;
     }
 }
