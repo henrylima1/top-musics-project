@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100%;
 }
 
 main {
@@ -21,10 +22,13 @@ main {
     width: 600px;
     height: 600px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     padding: 30px;
     border-radius: 15px;
     box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
 }
 
 main h1 {
@@ -49,9 +53,23 @@ main ul li a:hover {
 }
 
 main ul li:hover{
-    color: #3da8ul;
+    color: #3da8f0;
 }
 
 main img {
     width: 20px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+a {
+    color: white;
+}
+
+p#advise a:hover{
+    color: darkgray;
 }
