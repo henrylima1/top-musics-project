@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -31,7 +32,7 @@ main h1 {
     font-size: 2em;
 }
 
-main ol {
+main ul {
     margin-top: 50px;
     margin-left: 30px;
     line-height: 4em;
@@ -39,16 +40,16 @@ main ol {
     font-weight: 600;
 }
 
-main ol li a {
+main ul li a {
     color: white;
 }
 
-main ol li a:hover {
+main ul li a:hover {
     color: #3da8f0;
 }
 
-main ol li:hover{
-    color: #3da8f0;
+main ul li:hover{
+    color: #3da8ul;
 }
 
 main img {
