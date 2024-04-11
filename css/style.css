@@ -14,7 +14,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
 }
 
 main {
@@ -29,6 +28,23 @@ main {
     box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+iframe#extra {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    margin-left: -30px;
+    margin-top: 10%;
+}
+
+iframe#extra1 {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    margin-left: -30px;
+    margin-top: 10%;
 }
 
 main h1 {
@@ -54,6 +70,7 @@ main ul li a:hover {
 
 main ul li:hover{
     color: #3da8f0;
+    cursor: pointer;
 }
 
 main img {

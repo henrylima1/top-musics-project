@@ -1,4 +1,4 @@
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     body {
         background-position: center center;
         background-color: rgba(0, 0, 0, 0.87);
@@ -15,5 +15,10 @@
     }
     ul li {
         margin-left: -55px;
+    }
+
+    section#yuusha, section#tgrotw, section#ishida, section#minor-piece, section#anywhere-anytime {
+        width: 320px;
+        margin-left: -38px;
     }
 }

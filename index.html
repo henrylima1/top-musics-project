@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu TOP 10 Músicas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu TOP 10 Músicas</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
-    <main>
-        <section>
-            <h1>Meu TOP 10 Músicas</h1>
 
-            <ul>
-                <li><a href="https://open.spotify.com/intl-pt/track/4LjIQmt1t6NjpM0tpttzjo?si=5e0dff30421c49af" target="_blank">1. YOASOBI - Yuusha</a></li>
-                <li><a href="https://open.spotify.com/intl-pt/track/5cDdNqff2mAutAWAM2Zs2c?si=498a49f2a98d4c63" target="_blank">2. Yui Ninomiya - The Great Revolution of this World</a></li>
-                <li><a href="https://open.spotify.com/intl-pt/track/4jO4ZVGnMiiDfniBvQ5Wfp?si=3b572c2fbcad404f" target="_blank">3. Ishida - Constelação (Satoru Gojo)</a></li>
-                <li><a href="https://open.spotify.com/intl-pt/track/43vkJIKACSolK6cbPJknEL?si=e85c211c57e54b9b" target="_blank">4. ZAQ - Minor Piece</a></li>
-                <li><a href="https://open.spotify.com/intl-pt/track/7FeEiAWqWScpMFnlLSUvX2?si=bcf21048c4bb47ae" target="_blank">5. milet - Anytime Anywhere</a></li>
-            </ul>
-        </section>
-    </main>
-    <p id="advise">Todas as músicas estão hospedadas no <a href="https://open.spotify.com/intl-pt">Spotify</a>. Site totalmente feito para fins estudantis.</p>
+  <main>
+    <iframe id="extra" src="" frameborder="0" width="100%" height="700px"></iframe>
+    <section>
+    <section>
+      <h1>Meu TOP 10 Músicas</h1>
+      <ul>
+        <li id="yuusha" onclick="showIframe('yuusha')">1. YOASOBI - Yuusha</li>
+        <li id="tgrotw" onclick="showIframe('tgrotw')">2. Yui Ninomiya - The Great Revolution of this World</li>
+        <li id="ishida" onclick="showIframe('ishida')">3. Ishida - Constelação (Satoru Gojo)</li>
+        <li id="minor-piece" onclick="showIframe('minor-piece')">4. ZAQ - Minor Piece</li>
+        <li id="anywhere-anytime" onclick="showIframe('anywhere-anytime')">5. milet - Anytime Anywhere</li>
+      </ul>
+    </section>
+  </main>
+  <p id="advise">Todas as músicas estão hospedadas no <a href="https://open.spotify.com/intl-pt" target="_blank">Spotify</a>. Site totalmente feito para fins estudantis.</p>
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener("message", function(event) {
+  if (event.data === "removerIframe") {
+    var iframeElement = document.getElementById("extra");
+    iframeElement.parentNode.removeChild(iframeElement);
+    iframeAberto = false;
+    window.location.reload();
+  }
+});
+
+function showIframe(id) {
+  if (!iframeAberto) {
+    var iframeElement = document.getElementById("extra");
+    iframeElement.src = "iframe.html#" + id;
+    iframeAberto = true;
+  }
+}
+
+function resetarIframe(id) {
+  var iframeElement = document.getElementById("extra1");
+  iframeElement.parentNode.addChild(iframeElement);
+}
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
